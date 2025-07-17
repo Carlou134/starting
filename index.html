@@ -14,17 +14,16 @@
         <h1>Letras y Café</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Monthly Pick</li>
-                <li>Member Reviews</li>
-                <li>Forum</li>
-                <li>Events</li>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#books">Monthly Pick</a></li>
+                <li><a href="#Members">Member Reviews</a></li>
+                <li><a href="#meetings">Events</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="welcome">
+        <section class="welcome" id="welcome">
             <h2>Welcome to Letras y Café</h2>
             <article>
                 <p>“Letras y Café is a community of book lovers who meet to share ideas, 
@@ -37,16 +36,18 @@
                 <figcaption>Book and tea</figcaption>
             </figure>
         </section>
-        <section class="book-month">
+        <section class="book-month" id="books">
             <h2>Book of the Month</h2>
-            <article>
-                <p>“Each month, we select one book to read together. 
-                At the end of the month, we hold a friendly discussion to share thoughts 
-                and favorite moments.”</p>
-            </article>
-            <aside>“The Midnight Library” by Matt Haig</aside>
+            <div class="book-container">
+                <article>
+                    <p>“Each month, we select one book to read together. 
+                    At the end of the month, we hold a friendly discussion to share thoughts 
+                    and favorite moments.”</p>
+                </article>
+                <aside>“The Midnight Library” by Matt Haig</aside>
+            </div>
         </section>
-        <section class="Members">
+        <section class="Members" id="Members">
             <h2>What Our Members Think</h2>
             <div class="container">
                 <div class="opinion">
@@ -59,22 +60,21 @@
                     <p>“Sharing ideas with other readers adds so much depth to the 
                         experience. Highly recommend!” – Daniel</p>
                 </div>
+                <div class="opinion">
+                    <img src="/images/avatar-3.avif" alt="avatar-3">
+                    <p>“Before joining, I read alone. Now, every book feels alive through our conversations.” – Lucas</p>
+                </div>
             </div>
         </section>
         
-        <div class="join-us">
-            <h2>Join the Discussion</h2>
-            <p>“A space to ask questions, post quotes, or share ideas while you’re 
-                reading. Make your voice heard!”</p>
-        </div>
-        
-        <div class="meetings">
+        <div class="meetings" id="meetings">
             <h2>Upcoming Meetups</h2>
             <ul>
                 <li>July 15: Book talk – “The Midnight Library” – 6:00 PM (Virtual)</li>
                 <li>July 22: Café Meetup – Local Coffee House – 5:30 PM</li>
                 <li>July 30: Open mic – Share your writing – 7:00 PM</li>
             </ul>
+            <img src="/images/photo-1682490323164-f0bc834dab67.avif" alt="">
         </div>
     </main>
 
