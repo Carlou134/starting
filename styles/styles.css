@@ -72,6 +72,7 @@ nav ul li a:hover{
     background-color: #fdf6e3;
     min-height: 50vh;
     padding: 20px;
+    margin-bottom: 40px;
 }
 
 .welcome img{
@@ -94,7 +95,8 @@ nav ul li a:hover{
     background-position: center;
     background-size: cover;
     color: white;
-    grid-template: repeat(5, 1fr) / 1fr
+    grid-template: repeat(5, 1fr) / 1fr;
+    margin-bottom: 40px;
 }
 
 .book-container{
@@ -108,6 +110,7 @@ nav ul li a:hover{
     justify-content: space-around;
     text-align: center;
     grid-template: auto / auto;
+    margin-bottom: 40px;
 }
 
 .container{
@@ -137,6 +140,7 @@ nav ul li a:hover{
     justify-content: start;
     background-color: #dbeafe;
     min-height: 60vh;
+    margin-bottom: 40px;
 }
 
 .meetings ul li {
@@ -150,8 +154,10 @@ nav ul li a:hover{
 }
 
 footer{
+    gap: 10px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 footer p{
