@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather', Arial, Helvetica, serif;
 }
 
 body{
@@ -12,7 +13,6 @@ body{
                          "footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto 1fr auto;
-    font-family: 'Merriweather', Arial, Helvetica, serif;
 }
 
 h1, h2, p, aside{
@@ -33,6 +33,7 @@ header{
 
 nav{
     grid-area: nav;
+    background-color: #3e2f2f;
 }
 
 main{
@@ -118,12 +119,14 @@ nav ul li a:hover{
     grid-template: 1fr / 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+    justify-items: center;
     gap: 10px;
 }
 
 .opinion {
     border: 4px solid #3e2f2f;
     text-align: center;
+    max-width: 80%;
     margin: 10px;
 }
 
@@ -163,3 +166,79 @@ footer{
 footer p{
     font-size: 1rem;
 }
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .welcome{
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .meetings{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .meetings img{
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 344px) and (max-width: 375px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .welcome{
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .opinion img{
+        width: 80%;
+    }
+
+    .meetings{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .meetings img{
+        max-width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+    }
+    
+    .Members img {
+        width: 200px;
+    }
+
+    .meetings img {
+        width: 300px;
+    }
+}
+
